@@ -1,0 +1,36 @@
+- icon: envelope
+  link: mailto:paolo.brasolin@gmail.com
+  label: Email
+  value: paolo.brasolin@gmail.com
+- icon: telegram
+  link: https://t.me/paolobrasolin
+  label: Telegram
+  value: paolobrasolin
+- icon: linkedin
+  link: https://www.linkedin.com/in/paolobrasolin/
+  label: LinkedIn
+  value: paolobrasolin
+- icon: twitter
+  link: https://twitter.com/paolobrasolin
+  label: Twitter
+  value: paolobrasolin
+- icon: mastodon
+  link: https://mathstodon.xyz/@paolobrasolin
+  label: Mastodon
+  value: "@paolobrasolin"
+- icon: orcid
+  link: https://orcid.org/0000-0003-2471-7797
+  label: ORCID
+  value: 0000-0003-2471-7797
+- icon: github
+  link: https://github.com/paolobrasolin/
+  label: GitHub
+  value: paolobrasolin
+- icon: heart
+  link: https://ko-fi.com/paolobrasolin
+  label: Ko-fi
+  value: paolobrasolin
+- icon: briefcase
+  link: https://paolobrasolin.github.io/cv/
+  label: Curriculum Vitae
+  value: Curriculum Vitae

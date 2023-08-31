@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 16pt;
+  @apply font-sans;
+}
+
+body {
+  @apply bg-black text-white;
+  @apply w-full h-full;
+  @apply max-w-sm m-auto;
+  @apply p-4;
+}
+
+/* Base style */
+main {
+  @apply flex flex-col gap-4;
+
+  h1 {
+    @apply font-bold text-3xl;
+  }
+
+  /* ul {
+    @apply flex flex-row flex-wrap gap-4;
+
+    svg.icon {
+      @apply w-8 h-8 fill-current shrink-0;
+    }
+    span {
+      @apply hidden;
+    }
+  } */
+
+  ul {
+    @apply flex flex-col gap-2;
+    a {
+      @apply flex flex-row gap-2 items-center justify-start;
+      @apply w-full px-2 py-1 bg-neutral-800 rounded-lg;
+      @apply hover:bg-neutral-600;
+      svg.icon {
+        @apply w-5 h-5 fill-current shrink-0;
+      }
+    }
+  }
+}
