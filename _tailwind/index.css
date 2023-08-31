@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  @apply bg-black text-white;
+  @apply bg-white text-black;
+  @apply dark:bg-black dark:text-white;
   @apply w-full h-full;
   @apply max-w-sm m-auto;
   @apply p-4;
@@ -19,7 +20,7 @@ main {
   @apply flex flex-col gap-4;
 
   h1 {
-    @apply font-bold text-3xl;
+    @apply font-bold text-3xl sm:text-center;
   }
 
   /* ul {
@@ -34,11 +35,12 @@ main {
   } */
 
   ul {
-    @apply flex flex-col gap-2;
+    @apply grid sm:grid-cols-2 gap-2;
     a {
       @apply flex flex-row gap-2 items-center justify-start;
-      @apply w-full px-2 py-1 bg-neutral-800 rounded-lg;
-      @apply hover:bg-neutral-600;
+      @apply w-full px-2 py-1 rounded-lg;
+      @apply bg-neutral-200 hover:bg-neutral-100 shadow-sm hover:outline outline-current;
+      @apply dark:bg-neutral-800 dark:hover:bg-neutral-600;
       svg.icon {
         @apply w-5 h-5 fill-current shrink-0;
       }
