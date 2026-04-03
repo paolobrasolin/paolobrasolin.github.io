@@ -5,7 +5,8 @@
   <title>Paolo Brasolin</title>
 
   <meta charset="utf-8">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#111" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#eee" media="(prefers-color-scheme: light)">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Paolo Brasolin">
 
@@ -47,7 +48,6 @@
     h1 {
       font-size: 1rem;
       font-weight: bold;
-      line-height: 1.6;
       margin-bottom: 3.2em;
     }
 
@@ -57,12 +57,13 @@
 
     nav a {
       display: block;
-      line-height: 1.6;
       color: #aaa;
       transition: color 0.15s, text-indent 0.1s steps(2), padding-right 0.1s steps(2);
       text-indent: 0;
+      /* Reserve 2ch left for the hover cursor; negative margin keeps text aligned with h1 */
       margin-left: -2ch;
       padding-left: 2ch;
+      /* Compensate width so fit-content stays stable when text-indent shifts on hover */
       padding-right: 2ch;
     }
 
@@ -97,10 +98,8 @@
       outline: none;
     }
 
-
     @media (prefers-color-scheme: light) {
       html { color: #111; background: #eee; }
-      h1 { color: #111; }
       nav a { color: #444; }
       nav a:hover, nav a:focus-visible { color: #000; }
     }
